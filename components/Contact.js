@@ -4,6 +4,7 @@ import * as yup from "yup";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import emailjs from "emailjs-com";
+import { useState } from "react";
 
 const schema = yup
   .object({
@@ -14,6 +15,7 @@ const schema = yup
   .required();
 
 export default function Contact() {
+  const [success, setSuccess] = useState(false);
   const {
     register,
     handleSubmit,
@@ -33,14 +35,10 @@ export default function Contact() {
 
       emailjs
         .send(serviceId, templateId, data, userId)
-        .then((response) => {
-          console.log(response);
-          if ((response.text = "ok")) {
-            reset();
-          }
-        })
+        .then((response) => console.log(response))
         .then((error) => console.log(error));
     }
+    reset();
   };
 
   return (
