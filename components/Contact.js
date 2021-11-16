@@ -17,13 +17,13 @@ export default function Contact() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
   });
 
   const onSubmit = (data) => {
-    event.preventDefault();
     console.log(data);
     if (data) {
       //emailjs Credentials
@@ -33,7 +33,12 @@ export default function Contact() {
 
       emailjs
         .send(serviceId, templateId, data, userId)
-        .then((response) => console.log(response))
+        .then((response) => {
+          console.log(response);
+          if ((response.text = "ok")) {
+            reset();
+          }
+        })
         .then((error) => console.log(error));
     }
   };
