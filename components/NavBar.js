@@ -110,11 +110,15 @@ export default function NavBar() {
             Contact
           </a>
         </Link>
-        <Link href="/resume">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
-            Resume
-          </a>
-        </Link>
+
+        <a
+          target="_blank"
+          href={resumeUrl}
+          rel="noopener noreferrer"
+          className=" text-base font-normal text-gray-600 dark:text-gray-300"
+        >
+          Resume
+        </a>
       </div>
     </div>
   );
