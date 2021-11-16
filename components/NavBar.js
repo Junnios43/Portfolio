@@ -9,7 +9,7 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 
-export default function Navbar() {
+export default function NavBar() {
   const router = useRouter();
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();

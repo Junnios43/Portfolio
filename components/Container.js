@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
+import NavBar from "./NavBar";
 
 export default function Container({ children, ...customMeta }) {
   const meta = {
@@ -20,7 +20,7 @@ export default function Container({ children, ...customMeta }) {
         <meta property="og:title" content={meta.title} />
       </Head>
       <main className="dark:bg-gray-800 w-full">
-        <Navbar />
+        <NavBar />
         <div>{children}</div>
         <Footer />
       </main>
