@@ -5,8 +5,9 @@ export default function About() {
     <section>
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl text-center font-bold md:text-7xl md:text-left">
-          The Story so far 📕
+          The Story so far
         </h1>
+
         <p className="text-xl mt-5 px-5">
           At ten years old, I found out what a computer was and what it could
           do. Being able to play online games together with friends, socialize
