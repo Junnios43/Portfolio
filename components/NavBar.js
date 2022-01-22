@@ -19,7 +19,7 @@ export default function NavBar() {
   }, []);
 
   const resumeUrl =
-    "https://drive.google.com/file/d/1z4fFzp5mSz8yCp-6cU820Aas8n7fQ3Wy/view?usp=sharing";
+    "https://drive.google.com/file/d/11ponm2rjOIQjcsOJkrY2LCa6kISDFVr2/view?usp=sharing";
   const linkedInUrl = "https://www.linkedin.com/in/junjwang/";
   const githubUrl = "https://github.com/Junnios43?tab=repositories";
 

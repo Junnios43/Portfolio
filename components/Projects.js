@@ -2,6 +2,11 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "Shopify to Space",
+    link: "https://shopify-to-space.vercel.app/",
+    src: "/shopify-to-space.png",
+  },
+  {
     title: "Amazon Clone",
     link: "https://amazon-clone-9ad5bdut6-junnios43.vercel.app/",
     src: "/amazon-clone.jpg",

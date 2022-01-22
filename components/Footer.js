@@ -1,7 +1,6 @@
 import ArrowLeftRoundedIcon from "@mui/icons-material/ArrowLeftRounded";
 import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -10,7 +9,7 @@ export default function Footer() {
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
         <div className="flex align-baseline space-x-2">
           <EmailRoundedIcon />
-          <a href="mailto:junjiewang42@outlook.com">junjiewang42@outlook.com</a>
+          <a href="mailto:jun.jwang@outlook.com">Jun.Jwang@outlook.com</a>
         </div>
         <div className="flex align-middle">
           <ArrowRightRoundedIcon />
